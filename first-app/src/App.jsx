@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import './App.css';
 
-function Weather() {
+function Weather () {
   const [city, setCity] = useState("");
   const [temp, setTemp] = useState("");
   const [pressure, setPressure] = useState("");
@@ -11,7 +11,7 @@ function Weather() {
   const [deg, setDeg] = useState("");
   const [icon, setIcon] = useState("");
 
-  useEffect(() => {
+  useEffect (() => {
     const url = "http://api.openweathermap.org/data/2.5/weather?q=LVIV&units=metric&APPID=5d066958a60d315387d9492393935c19";
 
     fetch(url)
