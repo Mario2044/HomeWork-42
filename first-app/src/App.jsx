@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import './App.css';
+import Menu from './menu/menu';
 
 function Weather () {
   const [city, setCity] = useState("");
@@ -30,15 +31,23 @@ function Weather () {
   }, []);
 
   return (
-    <div>
-      <h2>Погода у місті {city}</h2>
-      <p>Температура: {temp} °C</p>
-      <p>Тиск: {pressure} гПа</p>
-      <p>Опис: {description}</p>
-      <p>Вологість: {humidity}%</p>
-      <p>Швидкість вітру: {speed} м/с</p>
-      <p>Напрям вітру: {deg}°</p>
-      <img src={icon} alt="icon" />
+    <div class="wrap">
+      <div>
+      <Menu >
+      </Menu>
+      </div>
+      <div>
+      <div class="header">Погода у місті {city}</div>
+        <div class="unit">
+          <p>Температура: {temp} °C</p>
+          <p>Тиск: {pressure} гПа</p>
+          <p>Опис: {description}</p>
+          <p>Вологість: {humidity}%</p>
+          <p>Швидкість вітру: {speed} м/с</p>
+          <p>Напрям вітру: {deg}°</p> 
+        </div>
+        <img src={icon} alt="icon" />
+      </div>
     </div>
   );
 }

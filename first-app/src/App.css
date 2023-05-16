@@ -2,28 +2,39 @@ div {
   background-color: #f0f0f0;
   border-radius: 10px;
   padding: 20px;
-  margin: 50px auto;
-  max-width: 500px;
+  margin: 0 auto;
+  max-width: 1600px;
 }
 
-/* Стили для заголовка погоды */
-h2 {
+.header {
   font-size: 32px;
   font-weight: bold;
   text-align: center;
   margin-bottom: 30px;
+  background-color: rgb(112, 160, 170);
 }
 
-/* Стили для отдельных пунктов погоды */
+.unit {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: rgb(112, 160, 170);
+}
+
 p {
-  font-size: 24px;
+  font-size: 18px;
   line-height: 1.5;
   margin: 10px 0;
+
 }
 
-/* Стили для иконки погоды */
 img {
   display: block;
-  margin: 20px auto;
+  margin: 50px auto;
   max-width: 100px;
+}
+
+.wrap {
+  display: flex;
 }
