@@ -33,8 +33,7 @@ function Weather () {
   return (
     <div class="wrap">
       <div>
-      <Menu >
-      </Menu>
+      <Menu />
       </div>
       <div>
       <div class="header">Погода у місті {city}</div>
@@ -46,7 +45,9 @@ function Weather () {
           <p>Швидкість вітру: {speed} м/с</p>
           <p>Напрям вітру: {deg}°</p> 
         </div>
+        <div className="img">
         <img src={icon} alt="icon" />
+        </div>
       </div>
     </div>
   );

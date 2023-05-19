@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 div {
   background-color: #f0f0f0;
   border-radius: 10px;
@@ -11,7 +18,7 @@ div {
   font-weight: bold;
   text-align: center;
   margin-bottom: 30px;
-  background-color: rgb(112, 160, 170);
+  background-color: rgb(141, 213, 227);
 }
 
 .unit {
@@ -19,7 +26,7 @@ div {
   font-weight: bold;
   text-align: center;
   margin-bottom: 30px;
-  background-color: rgb(112, 160, 170);
+  background-color: rgb(141, 213, 227);
 }
 
 p {
@@ -35,6 +42,17 @@ img {
   max-width: 100px;
 }
 
+.img {
+  display: flex;
+  align-items: center;
+  width: 50px;
+  height: 10px;
+  background-color: rgb(141, 213, 227);
+}
+
 .wrap {
   display: flex;
+  color: #222;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
 }
